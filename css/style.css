@@ -40,6 +40,26 @@ h1, h2, h3, h4, h5, h6{
     line-height: 1.3;
 }
 
+/* header холбоо барих хэсэг */
+
+.header{
+    max-width: var(--max-width);
+    margin: auto;
+    /* padding: 0 2rem; */
+    overflow: hidden;
+    background: rgb(25, 149, 173);
+    text-align: center;
+}
+
+.header-contact,
+.header-fc,
+.header-page,
+.header-phone{
+    display: inline;
+    overflow: auto;
+    padding: 30px;
+}
+
 /* Utility */
 .container{
     max-width: var(--max-width);
@@ -58,12 +78,18 @@ h1, h2, h3, h4, h5, h6{
 
 #main-nav .container{
     display: grid;
-    grid-template-columns: 3fr 0.1fr  4fr;
-    padding: 0.5rem;
-    padding-left: 80px;
-    padding-right: 80px;
+    grid-template-columns: 3fr 0fr;
+    padding: 0.6rem;
     align-items: center;
 }
+
+/* .current,
+.current-1,
+.current-2,
+.current-3{
+    padding: 1px;
+    margin: 1px;
+} */
 
 #main-nav .logo{
     width: 80px;
@@ -108,6 +134,8 @@ h1, h2, h3, h4, h5, h6{
 sadjlgfa;s/gk'asdg'sakhdgwog9h;sadkssdfjhifghwoigshdflkashf;lahf;sihwiefh;kshdfk;djlfjsah;sadg
 sldljsajhgldkhg'alhhhhhhhkdsa'lllllllllllllllllllllllgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
 ashd;gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggdsakl */
+
+/* Нүүр хуудасны хичээл */
 
 .product{
     position: relative;
@@ -351,4 +379,305 @@ ashd;ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
 .collection:nth-child(3){
     grid-column: span 2;
     margin-bottom: 10px;
+}
+/* Сургалтын давуу талууд  */
+
+/* ======================================================================================================================================================================================================================== */
+
+.py-2{
+    background:rgb(236, 236, 236) ;
+}
+
+.advantage{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    /* background-color: rgb(255, 255, 255); */
+    margin: 80px;
+}
+
+.article-container{
+    padding: 50px;
+}
+
+.row{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.icon-row{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Мэдээлэл авах хэсэг */
+
+/* ================================================================================================================================================================================================================================================================================================================================================== */
+
+.information{
+    /* max-width: var(--max-width); */
+    margin: auto;
+    padding: 0 20rem;
+    padding-bottom: 3rem;
+    overflow: hidden;
+    background: #1995ad;
+}
+
+.information-section{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.information-searching,
+.information-search{
+    display: inline;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.information-input{
+    background-color: #1995ad;
+}
+
+.information-searching{
+    text-transform: capitalize;
+    padding: 5px;
+    left: 10px;
+    top: 60px;
+    background: rgb(4, 99, 114);
+    /* color: rgb(0, 0, 0); */
+    font-weight: bold;
+}
+
+/* Хэрэглэгчийн сэтгэгдлийн хэсэг */
+
+/* ================================================================================================================================================================================================================================ */
+
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10rem;
+}
+
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.testimonial-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0);
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+
+.reviews{
+    color: #f9d71c;
+}
+
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+@media(max-width:1060px){
+    .testimonial-box{
+        width: 45%;
+        padding: 10px;
+    }
+}
+
+@media (max-width:790px) {
+    .testimonial-box{
+        width: 100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:340px) {
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+
+/* ::selection{
+    color:#ffff;
+    background-color: #252525;
+} */
+
+/* Нүүр хуудасны Fooder */
+
+/* ================================================================================================================================================================================================================================================================================================================================================== */
+
+footer{
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#1995ad;
+    height: auto;
+    width: 100vw;
+    font-family: "Open sans";
+    padding-top: 40px;
+    color: #ccc;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer- content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3 rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition:  color .4s ease;
+}
+
+.socials a:hover i{
+    color: rgb(51, 63, 63);
+}
+
+.footer-bottom{
+    background:rgb(4, 99, 114);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
