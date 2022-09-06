@@ -62,9 +62,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* Utility */
+/* ================================================================================================================================================================================================================================================================================ */
+
 .container{
     max-width: var(--max-width);
-    margin: auto;
+    margin: block;
     padding: 0 2rem;
     overflow: hidden;
 }
@@ -86,13 +88,6 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
 }
 
-/* .current,
-.current-1,
-.current-2,
-.current-3{
-    padding: 1px;
-    margin: 1px;
-} */
 
 #main-nav .logo{
     width: 80px;
@@ -114,6 +109,13 @@ h1, h2, h3, h4, h5, h6{
     color: var(--secondary-color);
 }
 
+.current-1.current{
+    background-color: #009688;
+}
+
+/* showCase хэсэг */
+/* ================================================================================================================================================================================================================================================================================ */
+
 #showcase{
     /* padding: 20rem; */
     position: relative;
@@ -123,7 +125,7 @@ h1, h2, h3, h4, h5, h6{
 
 #showcase:before{
     content: '';
-    border: #333 solid 1px;
+    /* border: #333 solid 1px */
     background: url('../img/cover.jpg') no-repeat bottom/ cover;
     position: absolute;
     /* top: 0; */
@@ -133,12 +135,8 @@ h1, h2, h3, h4, h5, h6{
     opacity: 0.8;
 }
 
-/* asdfjklsdhlgjsdalgflasg;lasglasdhgsdhflsdahflksahdlfhsa;dkhs;adhgsdhg;sahgawgihwpqghaslh=============
-sadjlgfa;s/gk'asdg'sakhdgwog9h;sadkssdfjhifghwoigshdflkashf;lahf;sihwiefh;kshdfk;djlfjsah;sadg
-sldljsajhgldkhg'alhhhhhhhkdsa'lllllllllllllllllllllllgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
-ashd;gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggdsakl */
-
 /* Нүүр хуудасны хичээл */
+/* =============================================================================================================================================================================================================================================================================== */
 
 .product{
     position: relative;
@@ -168,16 +166,10 @@ ashd;ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
     top: 10px;
     font-weight: bold;
     margin-left: 700px;
+}
 
-    /* text-transform:capitalize;
-    background: #fff;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    height: 35px;
-    width: 150px;
-    left: 10px;
-    top: 10px; */
+.product-category-category:hover{
+    color: #10b6b3;
 }
 
 .product-container{
@@ -201,12 +193,16 @@ ashd;ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
 .product-image{
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 270px;
     overflow: hidden;
     border-radius: 20px;
     border: 1px solid #ccc;
     box-shadow: 3px 3px rgb(194, 192, 192); 
     cursor: pointer;
+}
+
+.product-imagesss{
+    height: 100%;
 }
 
 .product-thumb {
@@ -231,7 +227,7 @@ ashd;ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
     position: absolute;
     padding: 5px;
     text-decoration: line-through;
-    color: #ff0606;
+    color: #d6d0d0;
     background: rgb(255, 255, 255); 
     border-radius: 5px;
     left: 10px;
@@ -571,6 +567,16 @@ ashd;ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
     transition: all ease 0.3s;
 }
 
+.arrow-down{
+    font-size: 50px;
+    opacity: 0.2;
+}
+
+.arrow-down:hover{
+    opacity: 1;
+    color: #009688;
+}
+
 @media(max-width:1060px){
     .testimonial-box{
         width: 45%;
@@ -633,12 +639,16 @@ footer{
     text-transform: capitalize;
     line-height: 3rem;
 }
+/* .footer-image{
+    color: #009688;
+} */
 
 .footer- content p{
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
+    /* margin-bottom: 10px; */
 }
 
 .socials{
@@ -685,120 +695,6 @@ footer{
     font-weight: 200;
 }
 
-/* Бүх сургалт */
-
-/* ================================================================================================================================================================================================================================================================================ */
-
-.product-container-all{
-    padding: 50px 150px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    /* position: relative; */
-}
-
-.product-image-all{
-    position: relative;
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px rgb(194, 192, 192); 
-    cursor: pointer;
-}
-
-.discount-tag-all{
-    position: absolute;
-    background: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    color: #009688;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
-    font-weight: bold;
-}
-
-.actual-price-all{
-    position: absolute;
-    padding: 5px;
-    text-decoration: line-through;
-    color: #ff0606;
-    background: rgb(255, 255, 255); 
-    border-radius: 5px;
-    left: 10px;
-    top: 10px;
-    font-weight: bold;
-}
-
-.price-all{
-    position: absolute;
-    text-transform: capitalize;
-    padding: 5px;
-    left: 10px;
-    top: 60px;
-    background: #fff;
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.card-btn-all{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    width: 90%;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    background: #fff;
-    border-radius: 5px;
-    transition: 0.5s;
-    cursor: pointer;
-    opacity: 0;
-}
-
-.product-card-all:hover .card-btn-all{
-    opacity: 1;
-}
-
-.card-btn-all:hover{
-    background: #009688;
-    color: #fff;
-}
-
-.product-lesson-all,
-.product-time-all{
-    font-size: 12px;
-    display: inline;
-    overflow: auto;
-    padding: 5px;
-}
-
-.product-view-all,
-.product-students-all{
-    font-size: 12px;
-    display: inline;
-    overflow: auto;
-    padding: 8px;
-}
-
-.product-category-all{
-    padding: 30px;
-    /* padding: 0 10vw; */
-    font-size: 20px;
-    display: flex;
-    flex-flow: row;
-    font-weight: 500;
-    margin-top: 40px;
-    text-transform: capitalize;
-    background:rgb(4, 99, 114);
-    color: #F1F1F2;
-}
-
 /* Сагсны хэсэг */
 
 /* ================================================================================================================================================================================================================================================================================*/
@@ -830,5 +726,17 @@ footer{
     /* align-content: center; */
     /* padding-top: 5rem; */
     background: #009688;
+}
+.product-category-all{
+    padding: 30px;
+    /* padding: 0 10vw; */
+    font-size: 20px;
+    display: flex;
+    flex-flow: row;
+    font-weight: 500;
+    margin-top: 40px;
+    text-transform: capitalize;
+    background:rgb(4, 99, 114);
+    color: #F1F1F2;
 }
 
